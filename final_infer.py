@@ -36,7 +36,7 @@ def main():
     # Load dataset
     df = pd.read_csv(CSV_PATH)
     df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
-    df=df.head(100)
+    # df=df.head(100)
     def compute_bleu(reference, hypothesis):
         reference = [reference.lower().split()]
         hypothesis = hypothesis.lower().split()
