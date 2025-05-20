@@ -1,0 +1,8 @@
+torch
+transformers
+pillow
+pandas
+tqdm
+peft
+nltk
+bert_score
