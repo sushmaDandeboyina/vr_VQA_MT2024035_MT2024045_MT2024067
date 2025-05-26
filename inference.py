@@ -36,8 +36,8 @@ def main():
     # Load dataset
     df = pd.read_csv(CSV_PATH)
     # print("Columns in CSV:", df.columns.tolist())
-    #df['Path'] = df['image_name']  # Map 'image_name' to 'Path'
-    #df.columns = [col.capitalize() for col in df.columns]
+    # df['Path'] = df['image_name']  # Map 'image_name' to 'Path'
+    # df.columns = [col.capitalize() for col in df.columns]
     df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
     # df=df.head(10)
     def compute_bleu(reference, hypothesis):
